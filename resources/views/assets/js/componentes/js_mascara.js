@@ -26,6 +26,7 @@ $(function () {
             $(".bairro").val("");
             $(".cidade").val("");
             $(".estado").val("");
+            $(".ibge").val("");
         }
 
         var zip_code = $(this).val().replace(/\D/g, '');
@@ -36,6 +37,7 @@ $(function () {
             $(".bairro").val("");
             $(".cidade").val("");
             $(".estado").val("");
+            $(".ibge").val("");
 
             $.getJSON("https://viacep.com.br/ws/" + zip_code + "/json/?callback=?", function (data) {
                 if (!("erro" in data)) {
@@ -43,6 +45,7 @@ $(function () {
                     $(".bairro").val(data.bairro);
                     $(".cidade").val(data.localidade);
                     $(".estado").val(data.uf);
+                    $(".ibge").val(data.ibge);
                 } else {
                     limpar();
                     alert("CEP não encontrado.");
@@ -54,5 +57,5 @@ $(function () {
         }
     });
 
-});	
+});
 

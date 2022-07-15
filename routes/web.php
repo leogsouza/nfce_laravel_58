@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('template');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::resource('/empresas', 'EmpresaController');
