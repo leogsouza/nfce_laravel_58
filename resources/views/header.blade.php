@@ -63,8 +63,8 @@
                     </li>
                     <span class="h5 p-1 py-2 text-branco mb-0 d-block text-uppercase"><i class="icon fas fa-cube"></i>
                         Produto</span>
-                    <li><a href="lst-produto.html"><i class="icon fas fa-list"></i> Lista</a></li>
-                    <li><a href="frm-produto.html"><i class="icon fas fa-box"></i> cadastro</a></li>
+                    <li><a href="{{ route('produtos.index') }}"><i class="icon fas fa-list"></i> Lista</a></li>
+                    <li><a href="{{ route('produtos.create') }}"><i class="icon fas fa-box"></i> cadastro</a></li>
                 </ul>
             </nav>
         </div>
