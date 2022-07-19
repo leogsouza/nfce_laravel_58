@@ -24,9 +24,9 @@ mix
         'resources/views/assets/css/style.css',
     ], 'public/assets/css/app.css')
     .styles([
-        'resource/views/js/datatables/css/jquery.dataTables.min.css',
-        'resource/views/js/datatables/css/responsive.dataTables.min.css',
-        'resource/views/js/datatables/css/style_dataTables.min.css',
+        'resources/views/assets/js/datatables/css/jquery.dataTables.min.css',
+        'resources/views/assets/js/datatables/css/responsive.dataTables.min.css',
+        'resources/views/assets/js/datatables/css/style_dataTables.css',
     ], 'public/assets/js/datatables/css_datatables.css')
     .scripts([
         'resources/views/assets/js/jquery.min.js'

@@ -22,7 +22,9 @@
                     </li>
                     <li><a href="configuracao_nota.html"><i class="icon fas fa-file-invoice-dollar"></i>
                             Configurações de nota</a></li>
-                    <li><a href="#menu_cliente"><span>+</span> Emitente <i class="icon ihome fas fa-user"></i></a>
+                    <li><a href="#menu_empresa"><span>+</span> Emitente <i class="icon ihome fas fa-truck"></i></a>
+                    </li>
+                    <li><a href="#menu_cliente"><span>+</span> Cliente <i class="icon ihome fas fa-user"></i></a>
                     </li>
                     <li><a href="#menu_produto"><span>+</span> Produto <i class="icon ihome fas fa-cube"></i></a>
                     </li>
@@ -31,7 +33,7 @@
             </nav>
 
             <!-- MENU EMITENTE -->
-            <nav class="menuprincipal" id="menu_cliente">
+            <nav class="menuprincipal" id="menu_empresa">
                 <ul class="menu-ul">
                     <li class="bg-menu"><a href=""><i class="icon fas fa-arrow-left"></i> Recolher menu</a>
                     </li>
@@ -39,6 +41,18 @@
                         Emitente</span>
                     <li><a href="{{ route('empresas.index') }}"><i class="icon fas fa-list"></i> Lista</a></li>
                     <li><a href="{{ route('empresas.create') }}l"><i class="icon fas fa-box"></i> cadastro</a></li>
+                </ul>
+            </nav>
+
+            <!-- MENU CLIENTE -->
+            <nav class="menuprincipal" id="menu_cliente">
+                <ul class="menu-ul">
+                    <li class="bg-menu"><a href=""><i class="icon fas fa-arrow-left"></i> Recolher menu</a>
+                    </li>
+                    <span class="h5 p-1 py-2 text-branco mb-0 d-block text-uppercase"><i class="icon fas fa-user"></i>
+                        Clientes</span>
+                    <li><a href="{{ route('clientes.index') }}"><i class="icon fas fa-list"></i> Lista</a></li>
+                    <li><a href="{{ route('clientes.create') }}l"><i class="icon fas fa-box"></i> cadastro</a></li>
                 </ul>
             </nav>
 
